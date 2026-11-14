@@ -1,0 +1,94 @@
+/* style.css */
+:root {
+  --bg-color: #F9F6F0; /* 米白色 */
+  --primary-color: #1C2C44; /* 暖簾藍 */
+  --accent-color: #4A5D23; /* 抹茶綠 */
+  --text-color: #333333; /* 深灰黑色 */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Noto Serif TC", "標楷體", serif;
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid var(--accent-color);
+}
+
+header h1 {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+/* 障子/格柵風の区切り線 */
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, var(--accent-color), transparent);
+  margin: 40px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #DDDDDD;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+  background-color: #F9F9F9;
+}
